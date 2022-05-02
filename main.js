@@ -40,7 +40,7 @@ const basemapStamenTerrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.
 
 // read data from data files
 
-$.get('../data/data.csv', function(
+$.get('./data/data.csv', function(
     csvString) {
         data1 = Papa.parse(
             csvString, {header: true, dynamicTyping: true}).data.filter(
