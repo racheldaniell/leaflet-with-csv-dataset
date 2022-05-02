@@ -1,0 +1,33 @@
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+#map {
+    position: absolute;  
+    left:0; 
+    width: 95%;
+    height: 90%;
+    z-index: 1;
+}
+h1 {
+    font-style: bold;
+    font-size: 1.1em;
+}
+
+/* example of adjusting a leaflet built-in class */
+.leaflet-popup-content-wrapper {
+    background-color: lightyellow;
+}
+.leaflet-popup-tip {
+    background-color: rgb(243, 208, 146);
+}
+
+/* example of adjusting a custom class added within code for popup using a <div> */
+.popup {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}
+

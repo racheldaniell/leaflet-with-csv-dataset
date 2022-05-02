@@ -1,0 +1,56 @@
+<!-- for your starting HTML you may wish to start with the class example from 4_1 the Leaflet map with geoJSON data -->
+<!-- alternatively, you could look at the HTML file in the later 
+class template for using bootstrap to hold multiple maps and charts -->
+<!-- the main thing to add to your index.html file for CSV data use is to call in the "PapaParse" tool in the <head> section -->
+<!-- you will see that PapaParse is already listed in the class files, just commented out, so un-commment it in order to use it -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- note here we have incorporated the standard meta tag to encourage responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <title>A Leaflet Map of NYC Open Data</title>
+  
+  <!-- Load Leaflet, use newest version via http://leafletjs.com -->
+  <!--  we need to link Leaflet CSS and Leaflet JS in our head tags - note Leaflet CSS comes before Leaflet JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <!-- load jQuery, use newest version at https://code.jquery.com   -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  
+  <!-- PAPAPARSE CALL HERE - now we have un-commented it so it can be used -->
+  <!-- alternately, you could use a different CSV parsing tool of your choice -->
+  <!-- for CSV data layers use papaparse or jquery-csv to parse the csv - for example   -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+  
+  <!-- Position and style the map with CSS - see style.css file -->
+  <!-- be sure your file name and path match what is in your html and js references to files throughout your project-->
+  <!-- MAP WILL NOT APPEAR unless Position is defined via CSS-->
+  <link rel="stylesheet" type="text/css" href="style__.css">    
+
+</head>
+
+<body>
+  
+  <!-- use a HTML div tag to hold a title -->
+  <div id="title"></div>
+  <h1>The Major Squirrel Activities of 2018</h1>
+
+  <!-- use a HTML div tag to layout the map - maps should always be placed in div containers for control -->
+  <!-- check the style.css file to see the other necessary component to render leaflet maps -->
+  <div id="map"></div>
+
+  
+  <!-- include your custom Javascript .js code file to create the map -->
+  <!-- be sure your file name and path match what is in your html and js references to files throughout your project-->
+
+  <script type="text/javascript" src="main__.js"></script>
+
+</body>
+</html>
